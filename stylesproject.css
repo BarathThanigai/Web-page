@@ -1,0 +1,207 @@
+/* Global styles */
+
+/*
+  dark-green - #3c8453
+  sarly-beige - #bcaa96
+  dark grey - #222
+  light grey - #d3d4d6
+  off-white - #f6f6f6
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-width: 640px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url('placeholder-images/bg-sunset-ocean.jpg') no-repeat center center;
+background-size: cover;
+}
+
+.btn {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Index */
+
+.home {
+  background: url("placeholder-images/bg-sunset-ocean.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .content-wrapper {
+  background: rgba(255, 255, 255, 0.3);
+  flex-grow: 1;
+  padding: 20px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  max-width: 600px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.home .content-wrapper header {
+  background: transparent;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home .content-wrapper a {
+  color: rgb(95, 4, 4);
+  text-decoration: none;
+}
+
+.modify {
+  height: 300px;
+}
+
+/* Resume */
+
+.resume {
+  background: "C:\Users\conta\OneDrive\Desktop\Cdc class\starter-files\placeholder-images\bg-sunset-ocean.jpg";
+  background-size: cover;
+}
+
+.resume-header::before {
+  background: url(../images/bg-home-office-studio.jpg) center/cover no-repeat;
+  content: "";
+  display: block;
+  height: 300px;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.resume .download-link {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.resume-section a {
+  text-decoration: none;
+}
+
+.resume-section a:hover {
+  opacity: 0.6;
+}
+
+/* Profile */
+/* (no additional styles provided, section inherited) */
+
+/* Projects */
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.project-container img {
+  width: 250px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.project-details {
+  max-width: 700px;
+}
+
+.project-items img {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+}
+
+/* Work Experience */
+/* (inherited, layout handled in HTML) */
+
+/* Education */
+/* (inherited, layout handled in HTML) */
+
+/* Footer */
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: white;
+  background: rgba(34, 34, 34, 0.74);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-socials {
+  flex: 1;
+  text-align: right;
+  min-width: 200px;
+}
+
+.socials {
+  gap: 10px;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.socials img {
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.socials li {
+  display: inline-block;
+}
+
+footer a {
+  color: #f6f6f6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  opacity: 0.85;
+  color: #d3d4d6;
+}
