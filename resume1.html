@@ -12,7 +12,9 @@
 </head>
 
 <body class="resume">
-  <a class="btn download-link" href="/resume.pdf" download>Download Resume</a>
+
+  <!-- ✅ Resume Download Button (Relative Path) -->
+  <a class="btn download-link" href="resume.pdf" download>Download Resume</a>
 
   <header>
     <div class="content-wrapper">
@@ -22,6 +24,7 @@
   </header>
 
   <main class="content-wrapper">
+
     <!-- Profile Section -->
     <section class="resume-section">
       <h2>Profile</h2>
@@ -32,82 +35,66 @@
     </section>
 
     <!-- Projects Section -->
-    <!-- Projects Section -->
-<section class="resume-section">
-  <h2 class="section-title">Projects</h2>
-  <p>
-    View selected projects below. More information can be found at my
-    <a href="https://www.linkedin.com/in/barath-t-4361b8318/">LinkedIn profile</a> and
-    <a href="https://github.com/BarathThanigai">GitHub profile</a>.
-  </p>
+    <section class="resume-section">
+      <h2 class="section-title">Projects</h2>
+      <p>
+        View selected projects below. More information can be found at my
+        <a href="https://www.linkedin.com/in/barath-t-4361b8318/">LinkedIn profile</a> and
+        <a href="https://github.com/BarathThanigai">GitHub profile</a>.
+      </p>
+      <hr class="section-divider" />
 
-  <hr class="section-divider" />
+      <!-- Docker Project -->
+      <section class="project-item">
+        <div class="project-container">
+          <img src="placeholder-images/OIP (1).jpg" alt="Docker Security Scanner" class="project-img" />
+          <div class="project-details">
+            <h3 class="project-title">Docker Container Security Scanner</h3>
+            <p>
+              This project is an automated security scanner designed to continuously monitor Python projects
+              for vulnerabilities, weak file permissions, and potential security risks...
+            </p>
+            <a class="btn" href="https://github.com/BarathThanigai/Glitchcon-25---Docker-Container-Security-Scanner" target="_blank" rel="noopener">GitHub Repository</a>
+          </div>
+        </div>
+      </section>
 
-  <!-- Docker Project -->
-  <section class="project-item">
-    <div class="project-container">
-      <img src="placeholder-images/OIP (1).jpg" alt="Docker Project Image" class="project-img"/>
-      <div class="project-details">
-        <h3 class="project-title">Docker Container Security Scanner</h3>
-        <p>
-          This project is an automated security scanner designed to continuously monitor Python projects
-          for vulnerabilities, weak file permissions, and potential security risks. It integrates multiple
-          security tools like Bandit and Semgrep to detect command injection, hardcoded secrets (API keys,
-          passwords), and misconfigurations.
-        </p>
-        <a class="btn" href="https://github.com/BarathThanigai/Glitchcon-25---Docker-Container-Security-Scanner" target="_blank">GitHub Repository</a>
-      </div>
-    </div>
-  </section>
+      <hr class="section-divider" />
 
-  <hr class="section-divider" />
+      <!-- Organ Bank Project -->
+      <section class="project-item">
+        <div class="project-container">
+          <img src="placeholder-images/OIP (2).jpg" alt="Organ Bank" />
+          <div class="project-details">
+            <h3 class="project-title">Organ Bank</h3>
+            <p>
+              A web application for hospitals in which they can donate or receive organs which can be used to save 
+              the lives of patients. The software uses Python as the frontend and MySQL as the backend.
+            </p>
+            <a class="btn" href="https://github.com/BarathThanigai/Organ-bank-project" target="_blank" rel="noopener">GitHub Repository</a>
+          </div>
+        </div>
+      </section>
 
-  <!-- FoodPrep User Page -->
-  <section class="project-item">
-    <div class="project-container">
-      <img src="placeholder-images/OIP (2).jpg"/>
-      <div class="project-details">
-        <h3 class="project-title">Organ Bank</h3>
-        <p>
-          A web application for hospitals in which they can donate or receive organs which can be used to save 
-          the lives of patients. The software uses python as the frontend and MySQl as the backend.
-        </p>
-        <a class="btn" href="https://github.com/BarathThanigai/Organ-bank-project">GitHub Repository</a>
-      </div>
-    </div>
-  </section>
+      <hr class="section-divider" />
 
-  <hr class="section-divider" />
+      <!-- C-Bot Project -->
+      <section class="project-item">
+        <div class="project-container">
+          <img src="placeholder-images/cbot.jpg" alt="C-Bot Project" />
+          <div class="project-details">
+            <h3 class="project-title">C-Bot App</h3>
+            <p>
+              Designed and developed an intelligent control application for C-Bot, an autonomous robot 
+              engineered to clean solid plastic waste from ocean surfaces...
+            </p>
+            <a class="btn" href="#">Website</a>
+          </div>
+        </div>
+      </section>
 
-  <!-- FoodPrep Admin Page -->
-  <section class="project-item">
-    <div class="project-container">
-      <img src="placeholder-images/cbot.jpg"/>
-      <div class="project-details">
-        <h3 class="project-title">C-Bot App</h3>
-        <p>
-          Designed and developed an intelligent control application for C-Bot, an autonomous robot 
-          engineered to clean solid plastic waste from ocean surfaces. The system is built with an 
-          emphasis on environmental safety and marine biodiversity preservation, ensuring that aquatic 
-          life remains unharmed during the waste collection process.
-          Key features of the project include:
-
-Targeted Waste Detection: Utilizes image processing and environmental sensors to differentiate between plastic debris and marine organisms.
-
-Eco-friendly Navigation: Employs real-time path planning and obstacle avoidance to operate efficiently in dynamic marine environments.
-
-Data Logging & Reporting: Tracks volume and type of waste collected for environmental monitoring and research.
-
-Sustainability Focus: Aims to contribute to cleaner oceans by reducing plastic pollution without disrupting the aquatic ecosystem. This project combines robotics, sensor technology, environmental science, and AI-driven decision-making to address one of the most pressing environmental challenges of our time.
-        </p>
-        <a class="btn" href="#">Website</a>
-      </div>
-    </div>
-  </section>
-
-  <hr class="section-divider" />
-</section>
-
+      <hr class="section-divider" />
+    </section>
 
     <!-- Work Experience -->
     <section class="resume-section">
@@ -130,8 +117,8 @@ Sustainability Focus: Aims to contribute to cleaner oceans by reducing plastic p
     <section class="resume-section">
       <h2>Education</h2>
       <section class="education-item">
-        <h3>Vellore Institute of technology - Chennai</h3>
-        <p>Bachelor of Engineering, 2028 - Computer science (Data Science)</p>
+        <h3>Vellore Institute of Technology - Chennai</h3>
+        <p>Bachelor of Engineering, 2028 - Computer Science (Data Science)</p>
       </section>
       <section class="education-item">
         <h3>Arsha Vidya Mandir - Guindy</h3>
@@ -139,7 +126,7 @@ Sustainability Focus: Aims to contribute to cleaner oceans by reducing plastic p
       </section>
       <section class="education-item">
         <h3>Arsha Vidya Mandir - Guindy</h3>
-        <p>Higher secondary, 2022 – 93%</p>
+        <p>Higher Secondary, 2022 – 93%</p>
       </section>
     </section>
 
@@ -168,7 +155,6 @@ Sustainability Focus: Aims to contribute to cleaner oceans by reducing plastic p
   <!-- Footer -->
   <footer>
     <div class="footer-text">
-      <p style="font-size: 18px;">
         © 2025 by T Barath |
         <a href="mailto:contactmebarath@gmail.com">contactmebarath@gmail.com</a> |
         6379473760
@@ -176,10 +162,20 @@ Sustainability Focus: Aims to contribute to cleaner oceans by reducing plastic p
     </div>
     <div class="footer-socials">
       <ul class="socials">
-        <li><a href="https://www.linkedin.com/in/barath-t-4361b8318/" target="_blank"><img src="placeholder-images/icon-logo-linkedin.png" alt="LinkedIn" width="45" height="45" /></a></li>
-        <li><a href="https://github.com/BarathThanigai" target="_blank"><img src="placeholder-images/OIP.jpg" alt="GitHub" width="40" height="40" /></a></li>
+        <li>
+  <a href="https://www.linkedin.com/in/barath-t-4361b8318/" target="_blank" rel="noopener">
+    <img src="placeholder-images/icon-logo-linkedin.png" alt="LinkedIn" width="45" height="45" />
+  </a>
+</li>
+<li>
+  <a href="https://github.com/BarathThanigai" target="_blank" rel="noopener">
+    <img src="placeholder-images/OIP.jpg" alt="GitHub" width="40" height="40" />
+  </a>
+</li>
+
       </ul>
     </div>
   </footer>
+
 </body>
 </html>
