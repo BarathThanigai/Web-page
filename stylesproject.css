@@ -1,22 +1,7 @@
-/* Global styles */
-
-/*
-  dark-green - #3c8453
-  sarly-beige - #bcaa96
-  dark grey - #222
-  light grey - #d3d4d6
-  off-white - #f6f6f6
-*/
-
+/* preserve your color codes */
 html {
   box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  min-width: 640px;
+  overflow-x: hidden; /* prevent horizontal scrolling */
 }
 
 *, *::before, *::after {
@@ -24,10 +9,18 @@ html, body {
 }
 
 body {
-  background: url('placeholder-images/bg-sunset-ocean.jpg') no-repeat center center;
-background-size: cover;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: url('placeholder-images/bg-sunset-ocean.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
+html, body {
+  width: 100%;
+}
+
+/* rest of your existing styles intact */
 .btn {
   background: rgba(255, 255, 255, 0.3);
   color: rgb(0, 0, 0);
@@ -35,15 +28,13 @@ background-size: cover;
   padding: 8px 16px;
   border-radius: 4px;
 }
-
 .btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Index */
-
 .home {
-  background: url("placeholder-images/bg-sunset-ocean.jpg") no-repeat;
+  background: url("placeholder-images/bg-sunset-ocean.jpg") no-repeat center center fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -54,12 +45,14 @@ background-size: cover;
   flex-grow: 1;
   padding: 20px;
   border-radius: 8px;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   max-width: 600px;
   margin: 60px auto;
   text-align: center;
 }
 
+/* keep header font */
 .home .content-wrapper header {
   background: transparent;
   font-family: "Times New Roman", Times, serif;
@@ -75,9 +68,8 @@ background-size: cover;
 }
 
 /* Resume */
-
 .resume {
-  background: "C:\Users\conta\OneDrive\Desktop\Cdc class\starter-files\placeholder-images\bg-sunset-ocean.jpg";
+  background: url('placeholder-images/bg-sunset-ocean.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -106,13 +98,9 @@ background-size: cover;
 .resume-section a {
   text-decoration: none;
 }
-
 .resume-section a:hover {
   opacity: 0.6;
 }
-
-/* Profile */
-/* (no additional styles provided, section inherited) */
 
 /* Projects */
 .project-wrapper {
@@ -149,12 +137,6 @@ background-size: cover;
   margin-right: 20px;
 }
 
-/* Work Experience */
-/* (inherited, layout handled in HTML) */
-
-/* Education */
-/* (inherited, layout handled in HTML) */
-
 /* Footer */
 footer {
   width: 100%;
@@ -166,42 +148,93 @@ footer {
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .footer-text {
   flex: 1;
   min-width: 250px;
 }
-
+.footer-text p {
+  font-size: 18px;
+}
 .footer-socials {
   flex: 1;
   text-align: right;
   min-width: 200px;
 }
-
 .socials {
   gap: 10px;
   list-style-type: none;
   padding: 5px;
   margin: 0;
 }
-
 .socials img {
   width: 32px;
   height: 32px;
   margin-top: 10px;
   margin-right: 10px;
 }
-
 .socials li {
   display: inline-block;
 }
-
 footer a {
   color: #f6f6f6;
   text-decoration: none;
 }
-
 footer a:hover {
   opacity: 0.85;
   color: #d3d4d6;
+}
+
+/* Responsive improvements - MINIMAL ONLY */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-container img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+  .project-details {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .resume .download-link {
+    top: 5px;
+    left: 5px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-socials {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  header, .resume-section h2, .resume-section h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    word-break: break-word;
+  }
+  .project-container img {
+    width: 100%;
+  }
+  .footer-text p {
+    font-size: 14px;
+  }
 }
